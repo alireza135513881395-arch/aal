@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-vazir: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-vazir);
+    background-color: #0b0f12;
+    color: #e0e2e8;
+  }
+}
+
+.font-vazir {
+  font-family: var(--font-vazir);
+}
+
+.font-jakarta {
+  font-family: var(--font-jakarta);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom glow and glassmorphism */
+.cyber-card {
+  background: rgba(24, 28, 32, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cyber-card:hover {
+  background: rgba(28, 32, 36, 0.85);
+  border-color: rgba(0, 240, 255, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(0, 219, 233, 0.15);
+}
+
+.cyber-card-active {
+  background: rgba(32, 37, 43, 0.9);
+  border-color: rgba(0, 240, 255, 0.5);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.2);
+}
+
+.glow-cyan-text {
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.6), 0 0 40px rgba(0, 240, 255, 0.2);
+}
+
+.glow-purple-text {
+  text-shadow: 0 0 20px rgba(209, 188, 255, 0.6), 0 0 40px rgba(112, 0, 255, 0.3);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0f12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272a2e;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00dbe9;
+}
+

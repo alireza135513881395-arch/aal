@@ -1,0 +1,6 @@
+{
+  "name": "TECH_CORE - پلتفرم خدمات دیجیتال پیشرفته",
+  "description": "سامانه جامع ارائه خدمات دیجیتال، تلگرام، اینستاگرام، کانفیگ‌های پرسرعت، ساخت ربات و طراحی سایت با پشتیبانی ۲۴ ساعته علیرضا دانشمند",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
